@@ -1,0 +1,46 @@
+body{
+    max-width:650px;
+    margin:40px auto;
+    padding:0 10px;
+    font:18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color:#444
+}
+
+h1,h2,h3{
+    line-height:1.2
+}
+
+@media (prefers-color-scheme: dark){
+    body{ color:#c9d1d9; background:#0d1117 }
+    a:link{ color:#58a6ff }
+    a:visited{ color:#8e96f0 }
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+.infographic {
+  display: grid;
+  grid-template-columns: minmax(25%, 1fr) auto;
+  /* grid-template-columns: 2fr 5fr;*/
+  width: 100%;
+}
+
+.infographic > svg {
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+}
+
+.infographic > div {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.infographic > div > div {
+  padding: 0.2em 0 0.2em 0.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
